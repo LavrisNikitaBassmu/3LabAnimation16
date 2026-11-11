@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анимация 16 — Аналоговые часы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="clock-card" aria-label="Анимированные аналоговые часы">
+    <header class="card-header">
+      <h1>Время</h1>
+      <div class="header-line"></div>
+    </header>
+
+    <div class="clock" role="img" aria-label="Аналоговые часы: секундная стрелка делает оборот за 60 секунд, минутная — за 3600 секунд, часовая — за 86400 секунд">
+      <!-- Циферблат загружается из отдельного PNG-файла -->
+      <img src="clock-face.png" class="clock-face" alt="" draggable="false">
+      <div class="hand hour"><span></span></div>
+      <div class="hand minute"><span></span></div>
+      <div class="hand second"><span></span></div>
+      <div class="center-pin"></div>
+    </div>
+    <p class="footnote">Часы с CSS-анимацией и ступенчатым движением стрелок</p>
+  </main>
+</body>
+</html>
